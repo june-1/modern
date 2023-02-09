@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="apple-logo_icon-icons.com_73680.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/universalparallax.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/universal-parallax.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+      new universalParallax().init();
+   });
+</script>
+</head>
+<body data-bs-spy="scroll">
+   <div id="wb_header">
+      <div id="header">
+         <div id="wb_Heading1" style="display:inline-block;z-index:0;">
+            <h1 id="Heading1">Crystals</h1>
+         </div>
+         <div id="wb_CssMenu1" style="display:inline-block;height:28px;z-index:1;">
+            <ul id="CssMenu1" role="menubar" class="nav">
+               <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#home" target="_self">Home</a>
+               </li>
+               <li role="menuitem" class="nav-item"><a class="nav-link" href="#services" target="_self">Portfolio</a>
+               </li>
+               <li role="menuitem" class="nav-item"><a class="nav-link" href="#about" target="_self">About</a>
+               </li>
+               <li role="menuitem" class="nav-item"><a class="nav-link" href="#contact" target="_self">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div id="wb_home">
+      <div class="parallax"></div>
+      <div id="home">
+         <div id="wb_Text5">
+            <p>Crystals</p>
+         </div>
+      </div>
+   </div>
+   <div id="wb_services">
+      <div class="parallax"></div>
+      <div id="services-overlay"></div>
+      <div id="services">
+         <div id="wb_Heading2" style="display:inline-block;z-index:3;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <h2 id="Heading2">PORTFOLIO</h2>
+         </div>
+         <div id="wb_Text2" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <span style="color:#FFFFFF;">Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. </span>
+         </div>
+         <a id="Button2" href="./portfolio.html" style="display:block;width:124px;z-index:5;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">Learn More</a>
+      </div>
+   </div>
+   <div id="wb_about">
+      <div class="parallax"></div>
+      <div id="about-overlay"></div>
+      <div id="about">
+         <div id="wb_Heading5" style="display:inline-block;z-index:6;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <h2 id="Heading5">ABOUT</h2>
+         </div>
+         <div id="wb_Text1" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <span style="color:#FFFFFF;">Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+         </div>
+         <a id="Button3" href="./about.html" style="display:block;width:124px;z-index:8;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">Learn More</a>
+      </div>
+   </div>
+   <div id="wb_contact">
+      <div class="parallax"></div>
+      <div id="contact-overlay"></div>
+      <form name="contact" method="post" action="mailto:yourname@yourdomain.com" enctype="text/plain" id="contact">
+         <div id="wb_Heading3" style="display:inline-block;z-index:9;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <h1 id="Heading3">CONTACT</h1>
+         </div>
+         <div id="wb_Text4" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+            <span style="color:#FFFFFF;"><strong>Any questions or remarks? Just write us a message!</strong></span>
+         </div>
+         <a id="Button1" href="./contact.html" style="display:block;width:124px;height:37px;z-index:11;" data--200-bottom-top="opacity:0;" data-center-bottom="opacity:1;">Get in Touch</a>
+      </form>
+   </div>
+   <div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:18;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:12;">
+         <a href="#home" onclick="$.scrollify.move('#1');return false;"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+</body>
+</html>
